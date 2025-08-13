@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+    <meta name="description" content="An accessible, well-structured HTML5 form with media, lists, and tables.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, section, footer {
+            margin-bottom: 20px;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px;
+            text-align: left;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Enhanced HTML5 Form</h1>
+        <p>This page includes lists, tables, media, and a fully-featured HTML5 form.</p>
+    </header>
+
+    <section>
+        <h2>Features List</h2>
+        <ul>
+            <li>Semantic HTML5 structure</li>
+            <li>Form validation with HTML5 attributes</li>
+            <li>Accessible form fields</li>
+            <li>Media integration (image and video)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sample Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>$10</td>
+                    <td>1 Month</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>$25</td>
+                    <td>3 Months</td>
+                </tr>
+                <tr>
+                    <td>Annual</td>
+                    <td>$80</td>
+                    <td>12 Months</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Media Section</h2>
+        <img src="https://via.placeholder.com/400x200" alt="Sample placeholder image">
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="plan">Choose a Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="">-- Select Plan --</option>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="annual">Annual</option>
+            </select>
+
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself"></textarea>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions
+            </label>
+
+            <label for="readonly-field">Referral Code:</label>
+            <input type="text" id="readonly-field" value="WELCOME2025" readonly>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Enhanced Form Demo. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
